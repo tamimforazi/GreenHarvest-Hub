@@ -160,39 +160,39 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             ),
           ),
           const SizedBox(height: 20),
-          Text(
-            "Similar Products",
-            style: Theme.of(context)
-                .textTheme
-                .titleMedium!
-                .copyWith(fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(height: 10),
-          SizedBox(
-            height: 90,
-            child: ListView.separated(
-              physics: const BouncingScrollPhysics(),
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
-                return Container(
-                  height: 90,
-                  width: 80,
-                  margin: const EdgeInsets.only(bottom: 16),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage(products[index].image),
-                      fit: BoxFit.cover,
-                    ),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                );
-              },
-              separatorBuilder: (__, _) => const SizedBox(
-                width: 10,
-              ),
-              itemCount: products.length,
-            ),
-          ),
+          // Text(
+          //   "Similar Products",
+          //   style: Theme.of(context)
+          //       .textTheme
+          //       .titleMedium!
+          //       .copyWith(fontWeight: FontWeight.bold),
+          // ),
+          // const SizedBox(height: 10),
+          // SizedBox(
+          //   height: 90,
+          //   child: ListView.separated(
+          //     physics: const BouncingScrollPhysics(),
+          //     scrollDirection: Axis.horizontal,
+          //     itemBuilder: (context, index) {
+          //       return Container(
+          //         height: 90,
+          //         width: 80,
+          //         margin: const EdgeInsets.only(bottom: 16),
+          //         decoration: BoxDecoration(
+          //           image: DecorationImage(
+          //             image: AssetImage(products[index].image),
+          //             fit: BoxFit.cover,
+          //           ),
+          //           borderRadius: BorderRadius.circular(8),
+          //         ),
+          //       );
+          //     },
+          //     separatorBuilder: (__, _) => const SizedBox(
+          //       width: 10,
+          //     ),
+          //     itemCount: products.length,
+          //   ),
+          // ),
           const SizedBox(height: 20),
           FilledButton.icon(
               onPressed: () {},
