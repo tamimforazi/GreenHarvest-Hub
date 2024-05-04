@@ -195,9 +195,10 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           // ),
           const SizedBox(height: 20),
           FilledButton.icon(
-              onPressed: () {},
-              icon: const Icon(IconlyLight.bag),
-              label: const Text("Add to cart"))
+            onPressed: () {},
+            icon: const Icon(IconlyLight.bag),
+            label: const Text("Add to cart"),
+          ),
         ],
       ),
     );
